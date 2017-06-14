@@ -1,7 +1,7 @@
-# GDAL-1.10.1-wintri
-GDAL with enabled Winkel Tripel map projection
 
 # Getting Winkel Tripel map projection enabled in GDAL 1.10.1 (QGIS, GRASS GIS etc.)
+
+Winkel Tripel map projection is still blacklisted in GDAL. Since it is one of favorite map projections for world maps, with this custom install of GDAL one can use this map projection in QGIS or GRASS GIS just as any other already supported map projection.
 
 These instructions are for Debian Linux system. Adapt it to your Linux system if necessary.
 
@@ -15,13 +15,11 @@ If not installed then you get:
 ```
 bash: proj: command not found
 ```
-
 If installed you get version:
 ```
 Rel. 4.9.3, 15 August 2016
 usage: proj [ -bCeEfiIlormsStTvVwW [args] ] [ +opts[=arg] ] [ files ]
 ```
-
 If your version is 4.9.1 or higher then you have version with inverse Winkel Tripel (and Aitoff) solution. Continue with next step.
 
 If your version is older then compile proj4 from source. First download ZIP from https://github.com/OSGeo/proj.4. You will get proj.4-master.zip file. Make sure you have development packages installed. In folder with zip file execute:
@@ -31,12 +29,10 @@ cd proj.4-master
 ./configure
 make
 ```
-
 As a root execute:
 ```
 make install
 ```
-
 Check it again:
 ```
 proj
@@ -53,7 +49,6 @@ As a root execute:
 ```
 apt-get build-dep gdal
 ```
-
 Download gdal-1.10.1+dfsg_with_winkel_tripel.tar.gz from https://github.com/GEOF-OSGL/gdal-1.10.1-wintri
 
 In folder with zip file execute:
@@ -63,7 +58,6 @@ cd gdal-1.10.1+dfsg
 ./configure
 make
 ```
-
 As a root execute:
 
 ```
@@ -73,7 +67,6 @@ make install
 ## QGIS
 
 As a root execute:
-
 ```
 apt-get install qgis
 cd /usr/lib
@@ -84,15 +77,11 @@ ln -s /usr/local/lib/libproj.so.12.0.0 libproj.so
 ln -s /usr/local/lib/libproj.so.12.0.0 libproj.so.0
 ldconfig
 ```
-
 Finally, you may to set environment variable:
-
 ```
 export GDAL_DATA=/usr/local/share/gdal
 ```
-
 And start QGIS
-
 ```
 qgis
 ```
