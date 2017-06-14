@@ -88,4 +88,4 @@ qgis
 
 Your QGIS (and GRASS GIS) should now support Winkel Tripel map projection (if it was compiled against GDAL 1).
 
-QGIS have some visualisation issues when some projections are used on the fly. Save or warp layer in wintri CRS to overcome these issues.
+QGIS have some visualisation issues when some projections are used on the fly. Save or warp layer into 'wintri' based CRS to overcome these issues.
