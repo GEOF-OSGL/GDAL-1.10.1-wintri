@@ -77,7 +77,7 @@ ln -s /usr/local/lib/libproj.so.12.0.0 libproj.so
 ln -s /usr/local/lib/libproj.so.12.0.0 libproj.so.0
 ldconfig
 ```
-Finally, you may to set environment variable:
+Finally, you may have to set environment variable:
 ```
 export GDAL_DATA=/usr/local/share/gdal
 ```
