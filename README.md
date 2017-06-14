@@ -20,7 +20,7 @@ If installed you get version:
 Rel. 4.9.3, 15 August 2016
 usage: proj [ -bCeEfiIlormsStTvVwW [args] ] [ +opts[=arg] ] [ files ]
 ```
-If your version is 4.9.1 or higher then you have version with inverse Winkel Tripel (and Aitoff) solution. Continue with next step.
+If your version is 4.9.1 or higher then you have version with inverse Winkel Tripel (and Aitoff) solution. Continue with GDAL compilation.
 
 If your version is older then compile proj4 from source. First download ZIP from https://github.com/OSGeo/proj.4. You will get proj.4-master.zip file. Make sure you have development packages installed. In folder with zip file execute:
 ```
