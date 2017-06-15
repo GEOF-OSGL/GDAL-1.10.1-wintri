@@ -3,7 +3,7 @@
 
 Winkel Tripel map projection is still blacklisted in GDAL. Since it is one of favorite map projections for world maps, with this custom install of GDAL one can use this map projection in QGIS or GRASS GIS just as any other already supported map projection.
 
-These instructions are for Debian Linux system. Adapt it to your Linux system if necessary.
+These instructions are for Debian based Linux system. Adapt it to your Linux system if necessary.
 
 ## Proj4
 
